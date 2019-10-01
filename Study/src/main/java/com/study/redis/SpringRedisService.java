@@ -17,10 +17,10 @@ public class SpringRedisService {
 			ValueOperations<String, Object> values = redisTemplate.opsForValue();
 			
 			// set
-			values.set("victolee", new Employee("01", "victolee"));
+			values.set("jechoi", new Employee("01", "jechoi", 29));
 			
 			// get
-			System.out.println("Employee added : " + values.get("victolee"));
+			System.out.println("Employee added : " + values.get("jechoi"));
 		}
 		catch(Exception e) {
 			e.printStackTrace();

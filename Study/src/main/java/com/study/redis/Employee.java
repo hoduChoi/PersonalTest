@@ -3,15 +3,18 @@ package com.study.redis;
 import java.io.Serializable;
 
 public class Employee implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
 	private String id;
 	private String name;
-	private Integer age;
+	private int age;
 	
 	public Employee() {}
 	
-	public Employee(String id, String name) {
+	public Employee(String id, String name, int age) {
 		this.id = id;
 		this.name = name;
+		this.age = age;
 	}
 
 	public String getId() {
@@ -34,7 +37,7 @@ public class Employee implements Serializable{
 		return age;
 	}
 
-	public void setAge(Integer age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
